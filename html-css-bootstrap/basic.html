@@ -5,6 +5,26 @@
     <title>THIS IS THE TITLE!</title>
   </head>
   <body>
+    <form method="get">
+      <h3>Do you already own a dog?</h3>
+      <label for="yes">Yes:</label>
+      <input type="radio" id="yes" name="dog_choice" value="yes">
+
+      <label for="no">No:</label>
+      <input type="radio" id="no" name="dog_choice" value="no">
+
+      <p>How clean is your house?</p>
+      <select name="stars">
+        <option value="Great">3</option>
+        <option value="Good">2</option>
+        <option value="Bad">1</option>
+      </select>
+
+      <p>Any other comments?</p>
+      <textarea name="name" rows="8" cols="80"></textarea>
+      <input type="submit" name="" value="Submit Feedback">
+    </form>
+
     <h1>BASIC HTML</h1>
     <img src="puppy.jpg" alt="">
     <img src="missing.jpg" alt="Uh Oh! No image">
