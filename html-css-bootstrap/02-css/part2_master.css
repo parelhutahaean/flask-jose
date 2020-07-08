@@ -1,0 +1,16 @@
+/* body{
+  background: gray;
+} */
+div{
+  background: blue;
+  border: orange 10px dashed;
+}
+
+p{
+  color: yellow;
+}
+
+span{
+  background: red;
+  color: black;
+}
