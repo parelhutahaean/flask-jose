@@ -55,3 +55,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Others
+migrations/
+*.sqlite
+*.png
+*.jpg
+*.jpeg
