@@ -19,7 +19,7 @@ def register():
                     password=form.password.data)
         db.session.add(user)
         db.session.commit()
-        flash('Thanks for registration!')
+        flash('Thanks for registering!')
         return redirect(url_for('users.login'))
     return render_template('register.html',form=form)
 
@@ -49,6 +49,7 @@ def login():
 @users.route('/logout')
 def logout():
     logout_user()
+    flash('You logged out!')
     return redirect(url_for('core.index'))
 
 # account (update UserForm)

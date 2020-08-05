@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
+{% for mess in get_flashed_messages() %}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    {{mess}}
+  </div>
+{% endfor %}
 <div class="jumbotron">
   <h1>{{post.title}}</h1>
   <h2>Written by: {{post.author.username}}</h2>
