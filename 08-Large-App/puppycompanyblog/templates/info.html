@@ -1,9 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
+  {% for mess in get_flashed_messages() %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      {{mess}}
+    </div>
+  {% endfor %}
   <div class="container">
     <div class="jumbotron">
       <h1>Info about our company</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2>About the author</h2>
+      <p>Hi there, Bon Jovi here! I want to be a romantic, capable of writing poems or touching short stories. However, i don't speak Roman. From the above you can guess i know some Latin. My main language these days is Python. So this website is what i can author. Sounds fair? Enjoy!</p>
     </div>
   </div>
 {% endblock %}
